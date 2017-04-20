@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<div id="liujincai"></div>
+<input type="button" name="start" value="start" onclick='timer2=window.setInterval("startShow()",2000);'>
+<input type="button" name="stop" value="stop" onclick="stop();">
+<script language="javascript">
+   var intvalue=1;
+   var timer2=null;
+   function startShow()
+   {
+      liujincai.innerHTML=liujincai.innerHTML + " " + (intvalue ++).toString();
+   }
+   function stop()
+   {
+      window.clearInterval(timer2);
+   }
+</script>
+</body>
+</html>

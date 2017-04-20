@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function Dog(name,age) {
+    this.Name = "";
+    this.Age = "";
+}
+Dog.prototype.Category = "狗类";
+var dog01 = new Dog("土狗",2);
+var dog02 = new Dog("黄狗",5);
+alert(dog01.Category);
+alert(dog02.Category);
+Dog.prototype.Category = "犬类";
+alert(dog01.Category);
+alert(dog02.Category);
+</script>
+</body>
+</html>
